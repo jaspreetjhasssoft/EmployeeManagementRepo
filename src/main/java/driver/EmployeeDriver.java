@@ -18,10 +18,10 @@ public class EmployeeDriver {
 		
 		EmployeeService service = (EmployeeService)con.getBean("employeeService");
 		List<String> list =  new ArrayList<String>();
-		list.add("ludo");
-		list.add("handball");
+		list.add("chess");
+		list.add("carrom");
 		
-		Employee emp =  new Employee("user2",43000L,list);
+		Employee emp =  new Employee("user3",54000L,list);
 		int result = service.save(emp);
 		System.out.println("Record inserted "+result);
 		
